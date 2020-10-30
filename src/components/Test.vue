@@ -2,7 +2,7 @@
     <div id="app">
         <ul id="kindamain">
             <li class="chats" v-for="item in randomtext" :key="item">
-                {{item}}
+                <div id="name">{{name}}</div>{{item}}
             </li>
         </ul>
     </div>
@@ -18,6 +18,16 @@ ul {
     align-items: flex-end;
     height: fit-content;
 }
+#name {
+    position: absolute;
+    margin-top: -26px;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    opacity: 1;
+    margin-right: -10px;
+}
 #kindamain {
     width: 400px;
 }
@@ -30,12 +40,14 @@ ul {
     font-weight: initial;
     width: fit-content;
     height: fit-content;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     word-wrap: break-word;
     background-color: #412a50;
     color: white;
     padding: 10px;
     font-family: sans-serif;
+    display: flex;
+    justify-content: flex-end;
 }
 </style>
 <script>
@@ -43,7 +55,7 @@ export default {
     el: "#app",
     data() {
         return{
-            qwer: 'qwer'
+            name: "Me"
         }
     },
     props: {

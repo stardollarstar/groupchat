@@ -16,12 +16,14 @@
 </template>
 <style scoped>
     #chatholder{
-        overflow-y: auto;
+        overflow-y: scroll;
         width: calc(100% - 310px);
         height: calc(100% - 150px);
         position: absolute;
         margin-top: -20px;
         padding-top: 20px;
+        margin-left: calc(100vw - 100%);
+        margin-right: 0;
     }
 </style>
 <script>
