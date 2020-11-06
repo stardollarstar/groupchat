@@ -51,12 +51,18 @@ ul {
 }
 </style>
 <script>
+import data from "../data.json"
+
 export default {
+
     el: "#app",
     data() {
         return{
             name: "Me"
         }
+    },
+    mounted: function() {
+        console.log(data);
     },
     props: {
         randomtext: Array

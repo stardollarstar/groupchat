@@ -6,6 +6,36 @@
     margin: 0;
     padding: 0;
 }
+@media screen
+
+and (max-width: 400px)
+ {
+body {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+#app {
+    width: 100%;
+}
+#chatrooms {
+    border: 1px solid black;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#chatholder {
+    width: 100%;
+}
+#leftside {
+    visibility: hidden;
+}
+#sendbutton {
+    font-size: 10px;
+}
+
+}
 body, html {
     width: 100%;
     overflow: hidden;
@@ -18,7 +48,7 @@ body, html {
     padding: 10px;
     padding-left: 20px;
     padding-right: 0px;
-    width: 250px;
+    width: 20%;
     height: 100%;
     background-color: #412a50;
     color: white;
@@ -91,10 +121,7 @@ body, html {
     background: #555;
 }
 #chatrooms {
-    border-left: 20px solid white;
-    border-left: 20px solid white;
-    /* border-right: 20px solid white; */
-    width: calc(100% - 310px);
+    width: 80%;
     height: 100%;
     max-height: 100%;
     background-color: #e2e5ed;
@@ -198,7 +225,7 @@ body, html {
     justify-content: center;
 }
 #inputofchat {
-    width: 100%;
+    width: 85%;
     height: 70%;
     outline: none;
     border: none;
